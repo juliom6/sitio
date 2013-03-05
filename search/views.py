@@ -1,5 +1,7 @@
-from django.views. generic import TemplateView
+from django.views.generic import TemplateView
 from django.http import HttpResponse
+from django.shortcuts import render_to_response
+from  search.models import Funcion
 
 class Buscador(TemplateView):
 	template_name = "cartelera.html"
@@ -20,5 +22,5 @@ def resultados(request):
 	pelicula = request.GET['pelicula']
 	distrito = request.GET['distrito']
 	horario = request.GET['horario']
-	mensaje = "%r %r %r %r" % (cine, pelicula, distrito, horario)
-	return HttpResponse(mensaje)
+	funciones = Funcion.objects.filter()
+	return HttpResponse()
