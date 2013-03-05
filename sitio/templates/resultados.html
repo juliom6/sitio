@@ -1,10 +1,17 @@
-{% if books %}
-    <p>Found {{ books|length }} book{{ books|pluralize }}.</p>
+<!DOCTYPE html>
+<html lang = "es">
+<head>
+	<title>Resultados</title>
+</head>
+<body>
+{% if funciones %}
+    <p>Se encontraron {{ funciones|length }} funcion{{ funciones|pluralize }}.</p>
     <ul>
-        {% for book in books %}
-        <li>{{ book.title }}</li>
+        {% for funcion in funciones %}
+        <li>{{ funcion.pelicula }}</li>
         {% endfor %}
     </ul>
 {% else %}
-    <p>No books matched your search criteria.</p>
+    <p>No hay funciones para dicha elección.</p>
 {% endif %}
+</body>

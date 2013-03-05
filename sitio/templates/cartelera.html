@@ -30,6 +30,7 @@
 							<option value = "El Inquilino">El Inquilino</option>
 							<option value = "El Maestro Luchador">El Maestro Luchador</option>
 							<option value = "Hermosas Criaturas">Hermosas Criaturas</option>
+							<option value = "Los Miserables">Los Miserables</option>
 						</select>
 
 						<select name = "distrito" style = "width: 100%; font-family: Verdana; font-size: 7.5pt; color: #747474">
@@ -72,6 +73,9 @@
 			</tr>
 		</tbody>
 	</table>
+	{% if error %}
+        <p style="color: red;">Please submit a search term.</p>
+    {% endif %}
 <center>	
 </body>
 </html>
