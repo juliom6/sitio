@@ -1,4 +1,6 @@
 sitio
 =====
 
-Proyecto para la administracion de la base de datos  de una tienda de DVDs
+Creacion de un buscador de peliculas en cines al estilo:
+
+http://www.terra.com.pe/cine/cartelera.php
