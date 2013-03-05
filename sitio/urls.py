@@ -5,5 +5,8 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
-	url(r'^$', Buscador.as_view()),
+	url(r'^cartelera/$', Buscador.as_view()),
+	#url(r'^cartelera/$', display_meta),
+
+	#url(r'^resultados/$', Buscador.resultados()),
 )
